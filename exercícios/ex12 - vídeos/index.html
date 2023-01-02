@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="images/bandeira brasil.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video src="midia/Terra E Mutano Amv.m4v" width="560" controls></video>
+    <hr>
+    <h3>Outro método de colocar vídeos no seu site mas esse modo pesa mais uai.</h3>
+    <video width="560" poster="images/logo do vídeo.png" controls>
+        <source src="midia/Terra E Mutano Amv.m4v" type="video/mp4">
+        <source src="midia/Terra E Mutano Amv.m4v" type="video/mp4">
+        <source src="midia/Terra E Mutano Amv.webm" type="video/webm">
+        <source src="midia/Terra E Mutano Amv.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com reprodução de videos.</p>
+    </video>
+    <hr>
+    <h1>Inserindo vídeos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/U0kxkksURss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

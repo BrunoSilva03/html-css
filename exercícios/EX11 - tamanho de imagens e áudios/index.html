@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="images/bandeira brasil.ico" type="image/x-icon">
+    <title>Mídias em HTML 5</title>
+</head>
+<body>
+    <H1>Imagem dinâmica</H1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="images/pequeno.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="images/medio.png" type="image/png">
+        <img src="images/grande.png" alt="imagem flexível">
+    </picture>
+    <hr>
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML 5</p>
+    <h3>Método 1:</h3>
+    <audio src="midia/musica1.mp3" controls autoplay></audio>
+    <!-- MP3 WAV OGG --> 
+
+    <hr>
+    <h3>Método 2</h3>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/musica3.mp3" type="audio/mpeg">
+        <source src="midia/musica3.ogg" type="audio/ogg">
+        <source src="midia/musica3.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/musica3.mp3">Clique aqui</a> para baixar o arquivo MP3</p>
+        <!-- Esses dois últimos source é caso tenham esses arquivos, primeiro tenta mp3, depois ogg, depois wav, se não der nenhum dos 3 ele mostra a mensagem-->
+    </audio>
+
+    <hr>
+    <h3>Método 3</h3>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/musica2.mp3" type="audio/mpeg">
+
+    </audio>
+</body>
+</html>
